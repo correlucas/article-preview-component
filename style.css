@@ -161,7 +161,7 @@ h1:hover {
   transition: ease-out 0.3s;
 }
 
-.article__info div:first-child:hover {
+.article__info--hover:hover {
   transform: translatex(3px);
   filter: grayscale(0);
   filter: saturate(1.3);
@@ -185,10 +185,10 @@ h1:hover {
   transition: ease-out 0.3s;
 }
 
-.share {
+/* .share {
   opacity: 100%;
   transition: ease-out 0.3s;
-}
+} */
 
 /* .share:hover {
   opacity: 100%;
@@ -197,33 +197,47 @@ h1:hover {
   filter: saturate(2);
 } */
 
-/* modal on hover */
-
-.modal--on {
-  display: none;
-  position: absolute;
-  left: -70px;
-  top: -70px;
-}
 
 .share {
   position: relative;
 }
 
-.share--on:hover~.modal--on {
-  display: flex;
+
+/* social icons */
+
+.facebook {
+  background-image: url("./images/icon-facebook.svg");
 }
 
-/* modal on hover */
+.twitter {
+  background-image: url("./images/icon-twitter.svg");
+}
+
+.pinterest {
+  background-image: url("./images/icon-pinterest.svg");
+}
+
+.facebook,
+.twitter,
+.pinterest {
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1.2rem;
+  width: 1.2rem;
+}
 
 .modal__box {
   display: flex;
+  transform: translate(-96px, -60px);
   padding: 10px 0;
+  position: absolute;
 }
 
 .modal img {
-  display: block;
+  display: flex;
   height: 100%;
+  width: 100%;
 }
 
 .modal {
@@ -244,6 +258,15 @@ h1:hover {
   font-size: 0.8125rem;
   letter-spacing: 0.3125rem;
 }
+
+.triangle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--grey-100);
+  position: absolute;
+  transform: translate(100px, 40px) rotate(45deg);
+}
+
 
 
 
