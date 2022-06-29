@@ -338,7 +338,7 @@ h1:hover {
 @media (max-width: 280px) {
 
   .article__picture {
-    height: 150px;
+    height: 120px;
   }
 
   .article__summary {
