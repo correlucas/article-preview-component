@@ -195,17 +195,6 @@ h1:hover {
 
 /* social icons */
 
-.share {
-  opacity: 98%;
-  transition: ease-out 0.3s;
-}
-
-.share:hover {
-  opacity: 100%;
-  transition: ease-out 0.3s;
-  transform: translatex(-4px);
-}
-
 .facebook {
   background-image: url("./images/icon-facebook.svg");
 }
@@ -226,6 +215,14 @@ h1:hover {
   background-repeat: no-repeat;
   height: 1.2rem;
   width: 1.2rem;
+  opacity: 0.9;
+}
+
+.facebook:hover,
+.twitter:hover,
+.pinterest:hover {
+  filter: invert(57%) sepia(56%) saturate(397%) hue-rotate(106deg) brightness(92%) contrast(86%);
+  opacity: 1;
 }
 
 .triangle {
@@ -256,28 +253,23 @@ h1:hover {
 }
 
 /* share on / off */
-
 #share--icon {
-  opacity: 100%;
+  opacity: 0.65;
+  position: relative;
   transition: ease-out 0.3s;
 }
 
 #share--icon:hover {
   opacity: 100%;
   transition: ease-out 0.3s;
-  transform: translatex(-3px) rotate(15deg);
-  filter: saturate(2);
+  transform: rotate(15deg);
 }
 
+/* activate modal popup */
 #share--icon:checked~#modal-box {
   display: flex;
   opacity: 1;
   transition: 0.3s;
-}
-
-#share--icon {
-  opacity: 1;
-  position: relative;
 }
 
 #share--icon::before {
