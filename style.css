@@ -145,7 +145,7 @@ h1:hover {
 
 /* article info section */
 
-.article__author {
+.author__photo {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -163,7 +163,7 @@ h1:hover {
   transition: ease-out 0.3s;
 }
 
-.article__info--hover:hover {
+.author__name:hover {
   transform: translatex(3px);
   filter: grayscale(0);
   filter: saturate(1.3);
@@ -310,7 +310,12 @@ h1:hover {
   }
 
   .article__picture {
+    height: 200px;
     border-radius: 10px 10px 0 0;
+  }
+
+  .article__picture img {
+    width: 100%;
   }
 
   h1 {
