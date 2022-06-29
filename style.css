@@ -253,32 +253,32 @@ h1:hover {
 }
 
 /* share on / off */
-#share--icon {
+#share__icon {
   opacity: 0.65;
   position: relative;
   transition: ease-out 0.3s;
 }
 
-#share--icon:hover {
+#share__icon:hover {
   opacity: 100%;
   transition: ease-out 0.3s;
   transform: rotate(15deg);
 }
 
 /* activate modal popup */
-#share--icon:checked~#modal-box {
+#share__icon:checked~#modal__box {
   display: flex;
   opacity: 1;
   transition: 0.3s;
 }
 
-#share--icon::before {
+#share__icon::before {
   display: block;
   transform: translate(-6px, -6px);
   content: url(./images/icon-share.svg);
 }
 
-#modal-box {
+#modal__box {
   position: absolute;
   display: none;
   opacity: 0;
