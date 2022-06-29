@@ -253,6 +253,10 @@ h1:hover {
 }
 
 /* share on / off */
+.share {
+  padding: 12px;
+}
+
 #share__icon {
   opacity: 0.65;
   position: relative;
@@ -273,7 +277,7 @@ h1:hover {
 }
 
 #share__icon::before {
-  display: block;
+  display: flex;
   transform: translate(-6px, -6px);
   content: url(./images/icon-share.svg);
 }
@@ -286,6 +290,18 @@ h1:hover {
   transform: translate(-102px, -98px);
   transition: 0.3s;
 }
+
+@media (max-width: 750px) {
+
+  .triangle {
+    transform: translate(187px, 41px) rotate(45deg);
+  }
+
+  #modal__box {
+    transform: translate(-187px, -98px);
+  }
+}
+
 
 @media (max-width: 500px) {
   .wrapper {
