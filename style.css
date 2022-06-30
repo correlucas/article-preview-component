@@ -270,7 +270,8 @@ h1:hover {
 }
 
 /* activate modal popup */
-#share__icon:checked~#social__media__popup {
+#share__icon:checked~#social__media__popup,
+#share__icon:checked~.share__icon__popup {
   display: flex;
   opacity: 1;
   transition: 0.3s;
@@ -291,7 +292,16 @@ h1:hover {
   transition: 0.3s;
 }
 
-@media (max-width: 750px) {
+/* hidden share icon on social popup before mobile 500px width */
+
+@media (max-width: 2000px) {
+  .share__icon__popup {
+    display: none;
+  }
+}
+
+
+@media (max-width: 850px) {
 
   .triangle {
     transform: translate(187px, 41px) rotate(45deg);
@@ -318,6 +328,10 @@ h1:hover {
     width: 100%;
   }
 
+  .share__icon__popup {
+    display: flex;
+  }
+
   h1 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -333,6 +347,13 @@ h1:hover {
   .article__summary {
     padding: 36px 32px 20px 32px;
   }
+
+
+  .modal,
+  .triangle {
+    display: none;
+  }
+
 }
 
 @media (max-width: 280px) {
