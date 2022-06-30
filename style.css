@@ -361,7 +361,7 @@ h1:hover {
   .modal--mobile {
     display: flex;
     padding: 24px 32px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-content: center;
     border-radius: 0 0 10px 10px;
   }
